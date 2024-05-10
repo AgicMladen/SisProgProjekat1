@@ -37,7 +37,7 @@ namespace Projekat
             }
             catch (Exception ex)
             {
-                return $"Error: {ex.GetType().Name} - {ex.Message}";
+                return $"Error: {ex.Message}";
             }
         }
     }

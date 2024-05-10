@@ -128,6 +128,7 @@ namespace Projekat
         private void MakeResponse(HttpListenerContext context, string responseContent, bool badRequest)
         {
             var response = context.Response;
+            Console.WriteLine(response);
             var buffer = Encoding.UTF8.GetBytes(responseContent);
             response.ContentLength64 = buffer.Length;
 
